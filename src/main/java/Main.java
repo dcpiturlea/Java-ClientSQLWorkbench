@@ -12,7 +12,7 @@ public class Main {
         Connection c = null;
         boolean repeat = true;
         try {
-            c = DriverManager.getConnection("jdbc:mysql://" + uc.ip + ":" + uc.port + "/" + uc.database, uc.user, uc.password);
+            c = DriverManager.getConnection("jdbc:"+uc.server+"://" + uc.ip + ":" + uc.port + "/" + uc.database, uc.user, uc.password);
 
         } catch (SQLException e1) {
             System.out.println("EROARE!!!");

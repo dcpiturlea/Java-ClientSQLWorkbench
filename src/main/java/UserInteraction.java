@@ -6,8 +6,12 @@ public class UserInteraction {
     public static UserCredential getCredentialFromUser() {
         UserCredential userCredential = new UserCredential();
         Scanner scanner = new Scanner(System.in);
-
-        userCredential.ip = "104.248.84.92";
+        System.out.println("Introduceti tipul serverului:");
+        userCredential.server = scanner.nextLine();
+        //System.out.println("Introduceti ip-ul:");
+       // userCredential.ip=scanner.nextLine();
+        //userCredential.ip = "104.248.84.92";
+        userCredential.ip = "127.0.0.1";
         System.out.println("Introduceti numarul portului:");
         userCredential.port = scanner.nextLine();
         System.out.println("Introduceti numele bazei de date:");

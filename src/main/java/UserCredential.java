@@ -4,5 +4,6 @@ public class UserCredential {
     String user;
     String password;
     String database;
+    String server;
 
 }
